@@ -34,7 +34,6 @@ class Program
         {
             if (number > max)
             {
-                // if this number is greater than the max, we have found the new max!
                 max = number;
             }
         }
