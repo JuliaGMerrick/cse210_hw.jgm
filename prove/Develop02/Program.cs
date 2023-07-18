@@ -6,8 +6,19 @@ class Program
     {
         class Journal 
         {
+            private string TitleArt = @"     ,..........   ..........,
+     ,..,'          '.'          ',..,
+    ,' ,'            :            ', ',
+   ,' ,'             :             ', ',
+  ,' ,'              :              ', ',
+ ,' ,'............., : ,.............', ',
+,'  '............   '.'   ............'  ',
+ '''''''''''''''''';''';''''''''''''''''''
+                    '''";
+
             public void Run() 
             {
+                Title = ('Journal App');
                 DisplayIntro();
 
                 DisplayOutro();
@@ -20,7 +31,8 @@ class Program
                 ForegroundColor = ConsoleColor.Black;
                 BackgroundColor = ConsoleColor.White;
                 Clear();
-                Console.WriteLine('Welcome to the journal app. ');
+                Console.WriteLine(TitleArt);
+                Console.WriteLine('\nWelcome to the journal app. ');
                 Console.ReadKey(true);
             }
             
